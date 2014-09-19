@@ -1404,8 +1404,6 @@ def _escapeAndEncode(text):
 #
 import sys
 import os
-f = open("/Users/loreglean/TEST.txt", 'w');
-f.write(os.path.dirname(sys.argv[0]) + "/../native.mm")
 project = XcodeProject.Load(sys.argv[1] + "/Unity-iPhone.xcodeproj/project.pbxproj")
 project.add_file(os.path.dirname(sys.argv[0]) + "/../native.mm")
 project.save()
